@@ -22,7 +22,7 @@ export const TapeSection = () => {
   return (
     <div>
       <div className="py-16 overflow-x-clip lg:py-24">
-        <div className="bg-gradient-to-r from-emerald-300 to-sky-400 -rotate-3 -mx-1">
+        <div className="bg-gradient-to-r from-purple-200 to-blue-400 -rotate-3 -mx-1">
           <div
             className="flex"
             style={{
