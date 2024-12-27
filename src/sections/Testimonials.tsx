@@ -48,7 +48,7 @@ const testimonials = [
 
 export const TestimonialsSection = () => {
   return (
-    <div className="py-16">
+    <div className="py-16 lg:py-24">
       <div className="container">
         <SectionHeader
           eyebrow="Happy Clients"
@@ -58,7 +58,7 @@ export const TestimonialsSection = () => {
         />
 
         <div
-          className="mt-16 flex overflow-x-clip"
+          className="mt-16 lg:mt-24 flex overflow-x-clip"
           style={{
             maskImage:
               "linear-gradient(to right, transparent, black 10%, black 90%, transparent)",
@@ -66,7 +66,7 @@ export const TestimonialsSection = () => {
         >
           <div className="flex flex-none gap-8">
             {testimonials.map((testimonial, index) => (
-              <Card key={testimonial.name} className="max-w-xs">
+              <Card key={testimonial.name} className="max-w-xs md:max-w-md md:p-8 md">
                 <div className="flex gap-4 items-center">
                   <div className="size-14 bg-gray-700 inline-flex rounded-full items-center  justify-center flex-shrink-0">
                     <Image
@@ -82,7 +82,7 @@ export const TestimonialsSection = () => {
                     </div>
                   </div>
                 </div>
-                <p className="mt-4 text-sm">{testimonial.text}</p>
+                <p className="mt-4 md:mt-6 text-sm md:text-base">{testimonial.text}</p>
               </Card>
             ))}
           </div>
