@@ -54,21 +54,18 @@ export const ProjectsSection = () => {
   return (
     <section className="pb-16 lg:py-24">
       <div className="container">
-        <SectionHeader eyebrow="Real-world Results" title="Featured Projects" description="See how I transformed concepts into engaging digital experiences"/>
-        
+        <SectionHeader
+          eyebrow="Real-world Results"
+          title="Featured Projects"
+          description="See how I transformed concepts into engaging digital experiences"
+        />
 
         <div className="flex flex-col mt-10 gap-20 md:mt-20 ">
           {portfolioProjects.map((project, index) => (
             <Card
-              
               key={project.title}
               className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20 "
             >
-              <div
-                className="absolute inset-0 -z-10 opacity-5"
-                style={{ backgroundImage: `url(${grainImage.src})` }}
-              ></div>
-
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
                   <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex font-bold uppercase tracking-widest text-small gap-2 text-transparent bg-clip-text">
