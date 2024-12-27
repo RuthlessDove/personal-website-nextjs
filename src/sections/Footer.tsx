@@ -16,7 +16,7 @@ export const Footer = () => {
   return (
     <footer className="relative -z-10 overflow-x-clip">
       <div
-        className="absolute h-[400px] w-[1600px] bottom-0 left-1/2 -translate-x-1/2 bg-emerald-300/30 -z-10"
+        className="absolute h-[400px] w-[1600px] bottom-0 left-1/2 -translate-x-1/2 bg-purple-200/30 -z-10"
         style={{
           maskImage: "radial-gradient(50% 50% at bottom center, black, transparent)"
         }}
