@@ -91,7 +91,9 @@ export const HeroSection = () => {
         </div>
 
         <div className="max-w-lg mx-auto">
-          <h1 className="font-serif text-purple-200 text-4xl text-center mt-8 tracking-wide md:text-6xl">Grace</h1>
+          <h1 className="font-serif text-purple-200 text-4xl text-center mt-8 tracking-wide md:text-6xl">
+            Grace
+          </h1>
           <h2 className="font-serif text-3xl text-center mt-6 tracking-wide md:text-5xl">
             Building Exceptional User Experiences
           </h2>
@@ -101,15 +103,21 @@ export const HeroSection = () => {
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
+        <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4 z-0">
           <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
             <span className="font-semibold">Explore My Work</span>
             <ArrowDown className="size-4" />
           </button>
-          <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
-            <span>👋</span>
-            <span className="font-semibold">Let's connect</span>
-          </button>
+          <a
+            className="z-10"
+            href="https://www.linkedin.com/in/grace-royle-uwumagbe"
+            target="_blank"
+          >
+            <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
+              <span>👋</span>
+              <span className="font-semibold">Let's connect</span>
+            </button>
+          </a>
         </div>
       </div>
     </div>
