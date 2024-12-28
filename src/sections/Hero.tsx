@@ -31,31 +31,31 @@ export const HeroSection = () => {
         <div className="size-[1220px] hero-ring"></div>
 
         <HeroOrbit size={800} rotation={-72}>
-          <StarIcon className="size-28 text-purple-200 " />
+          <StarIcon className=" animate-spin [animation-duration:40s] size-28 text-purple-200 " />
         </HeroOrbit>
 
         <HeroOrbit size={550} rotation={20}>
-          <StarIcon className="size-12 text-purple-200 " />
+          <StarIcon className=" animate-spin [animation-duration:40s] size-12 text-purple-200 " />
         </HeroOrbit>
 
         <HeroOrbit size={590} rotation={98}>
-          <StarIcon className="size-8 text-purple-200 " />
+          <StarIcon className=" animate-spin [animation-duration:40s] size-8 text-purple-200 " />
         </HeroOrbit>
 
         <HeroOrbit size={430} rotation={-14}>
-          <SparkleIcon className="size-8 text-purple-200/20" />
+          <SparkleIcon className=" animate-spin [animation-duration:40s] size-8 text-purple-200/20" />
         </HeroOrbit>
 
         <HeroOrbit size={440} rotation={79}>
-          <SparkleIcon className="size-5 text-purple-200/20" />
+          <SparkleIcon className=" animate-spin [animation-duration:40s] size-5 text-purple-200/20" />
         </HeroOrbit>
 
         <HeroOrbit size={530} rotation={178}>
-          <SparkleIcon className="size-10 text-purple-200/20" />
+          <SparkleIcon className=" animate-spin [animation-duration:40s] size-10 text-purple-200/20" />
         </HeroOrbit>
 
         <HeroOrbit size={710} rotation={144}>
-          <SparkleIcon className="size-14 text-purple-200/20" />
+          <SparkleIcon className=" animate-spin [animation-duration:30s] size-14 text-purple-200/20" />
         </HeroOrbit>
 
         <HeroOrbit size={710} rotation={85}>
@@ -91,9 +91,10 @@ export const HeroSection = () => {
         </div>
 
         <div className="max-w-lg mx-auto">
-          <h1 className="font-serif text-3xl text-center mt-8 tracking-wide md:text-5xl">
+          <h1 className="font-serif text-purple-200 text-4xl text-center mt-8 tracking-wide md:text-6xl">Grace</h1>
+          <h2 className="font-serif text-3xl text-center mt-6 tracking-wide md:text-5xl">
             Building Exceptional User Experiences
-          </h1>
+          </h2>
           <p className="mt-4 text-center text-white-60 md:text-lg">
             I specialise in transforming designs into functional,
             high-performing web applications. Let's discuss your next project.
