@@ -17,13 +17,10 @@ import SQLlite from "@/assets/icons/sqlite.svg";
 import PythonIcon from "@/assets/icons/python.svg";
 import JavascriptIcon from "@/assets/icons/javascript-yellow.svg";
 
-
-
 // Components
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 import { ProjectTechIcons } from "@/components/ProjectTechIcons";
-import { Html } from "next/document";
 
 const portfolioProjects = [
   {
@@ -101,7 +98,7 @@ export const ProjectsSection = () => {
                   <ul className="flex flex-col gap-4 mt-4 md:mt-5">
                     {project.results.map((result, index) => (
                       <li className="flex gap-2 text-small text-white/50 md:text-base">
-                        <CheckCircleIcon className="size-5 md:size-6" />
+                        <CheckCircleIcon className="size-5 md:size-6" key={index} />
                         <span key={index}>{result.title}</span>
                       </li>
                     ))}
