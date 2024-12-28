@@ -2,51 +2,72 @@
 import Image from "next/image";
 
 // Assets
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import communifyUI from "@/assets/images/communify-app.png";
+import moneyMentorImg from "@/assets/images/money-mentor-bg.png";
+import bubbleAppImg from "@/assets/images/bubbles-app.png";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRight from "@/assets/icons/arrow-up-right.svg";
-import grainImage from "@/assets/images/grain.jpg";
+//Icons
+import FigmaIcon from "@/assets/icons/figma.svg";
+import ApiIcon from "@/assets/icons/api.svg";
+import CssIcon from "@/assets/icons/css-3-blue.svg";
+import HtmlIcon from "@/assets/icons/html-5-orange.svg";
+import FlaskIcon from "@/assets/icons/flask.svg";
+import SQLlite from "@/assets/icons/sqlite.svg";
+import PythonIcon from "@/assets/icons/python.svg";
+import JavascriptIcon from "@/assets/icons/javascript-yellow.svg";
+
+
+
+// Components
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
+import { ProjectTechIcons } from "@/components/ProjectTechIcons";
+import { Html } from "next/document";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
-    results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
-    ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
-  },
-  {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
-    results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
-    ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
-  },
-  {
-    company: "Quantum Dynamics",
+    company: "WCIT Hackathon",
     year: "2023",
-    title: "AI Startup Landing Page",
+    title: "Communify App",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Created an app to aid displaced people" },
+      { title: "Utilised APIs to allow for live translation" },
+      { title: "Developed the UI for a wearable device" },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    link: "#",
+    image: communifyUI,
+    text: "",
+    icon: [FigmaIcon, ApiIcon, HtmlIcon, CssIcon],
+  },
+  {
+    company: "Financial Education",
+    year: "2024",
+    title: "Money Mentor",
+    results: [
+      { title: "Gamify Financial Education" },
+      { title: "Create adaptive goals for users" },
+      { title: "Utilise AI to enhance learning" },
+    ],
+    link: "https://devpost.com/software/whackjobs?ref_content=existing_user_added_to_software_team&ref_feature=portfolio&ref_medium=email&utm_campaign=software&utm_content=added_to_software_team&utm_medium=email&utm_source=transactional#app-team",
+    image: moneyMentorImg,
+    text: "View Devpost",
+    icon: [FigmaIcon, PythonIcon, ApiIcon, SQLlite, HtmlIcon, CssIcon, JavascriptIcon, FlaskIcon
+    ],
+  },
+  {
+    company: "WCIT Hackathon",
+    year: "2023",
+    title: "Bubbles App",
+    results: [
+      { title: "Created as social media app" },
+      { title: "Catered to the neurodiverse" },
+      { title: "Allowed users to create custom channels" },
+    ],
+    link: "#",
+    image: bubbleAppImg,
+    text: "",
+    icon: [FigmaIcon],
   },
 ];
 
@@ -85,18 +106,32 @@ export const ProjectsSection = () => {
                       </li>
                     ))}
                   </ul>
-                  <a href={project.link} target="_blank">
-                    <button className="bg-white text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 md:w-auto md:px-6">
-                      <span>Visit Live Site</span>
-                      <ArrowUpRight className="size-4" />
-                    </button>
-                  </a>
+
+                  {project.text != "" ? (
+                    <>
+                      <div className="pt-2 -mb-2 mt-6">
+                        <ProjectTechIcons iconList={project.icon} />
+                      </div>
+                      <a href={project.link} target="_blank">
+                        <button className="bg-white text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 md:w-auto md:px-6">
+                          <span>{project.text}</span>
+                          <ArrowUpRight className="size-4" />
+                        </button>
+                      </a>
+                    </>
+                  ) : (
+                    <>
+                      <div className="pt-2 sm:pt-0 -mb-2 mt-8">
+                        <ProjectTechIcons iconList={project.icon} />
+                      </div>
+                    </>
+                  )}
                 </div>
                 <div className="relative">
                   <Image
                     src={project.image}
                     alt={project.title}
-                    className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
+                    className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none lg:rounded-tl-2xl rounded-t-2xl"
                   />
                 </div>
               </div>
