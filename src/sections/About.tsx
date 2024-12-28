@@ -3,12 +3,10 @@ import Image from "next/image";
 
 // Components
 import { SectionHeader } from "@/components/SectionHeader";
-import { TechIcon } from "@/components/TechIcon";
 import { Card } from "@/components/Card";
 import { CardHeader } from "@/components/CardHeader";
 
 // Assets
-import StarIcon from "@/assets/icons/star.svg";
 import bookImage from "@/assets/images/book-cover.png";
 import JavascriptIcon from "@/assets/icons/javascript.svg";
 import HTMLIcon from "@/assets/icons/html5.svg";
@@ -16,8 +14,8 @@ import CSSIcon from "@/assets/icons/css3.svg";
 import ReactIcon from "@/assets/icons/react.svg";
 import ChromeIcon from "@/assets/icons/chrome.svg";
 import GithubIcon from "@/assets/icons/github.svg";
-import mapImage from "@/assets/images/map.png";
-import smileMejomji from "@/assets/images/memoji-smile.png";
+import mapImage from "@/assets/images/london-map.jpg";
+import smileMejomji from "@/assets/images/memoji.png";
 import { ToolboxItems } from "@/components/ToolboxItems";
 
 const toolboxItems = [
@@ -49,8 +47,8 @@ const toolboxItems = [
 
 const hobbies = [
   {
-    title: "Painting",
-    emoji: "🎨",
+    title: "Football",
+    emoji: "⚽",
     left: "5%",
     top: "5%",
   },
@@ -68,8 +66,8 @@ const hobbies = [
     top: "40%",
   },
   {
-    title: "Hiking",
-    emoji: "🥾",
+    title: "Dancing",
+    emoji: "💃",
     left: "35%",
     top: "40%",
   },
@@ -80,8 +78,8 @@ const hobbies = [
     top: "35%",
   },
   {
-    title: "Fitness",
-    emoji: "🏋️‍♂️",
+    title: "Spanish",
+    emoji: "💬",
     left: "5%",
     top: "65%",
   },
@@ -162,13 +160,13 @@ export const AboutSection = () => {
                 alt="Map"
                 className="h-full w-full object-cover object-left-top"
               />
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full bg-gradient-to-r from-purple-200 to-blue-400 after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
+                <div className="inline-flex items-center justify-center mx-auto absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full bg-gradient-to-r from-purple-200 to-blue-400 after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
                 <Image
                   src={smileMejomji}
                   alt="Smiling Memoji"
-                  className="size-20"
+                  className="size-16 object-contain"
                 />
-              </div>
+                </div>
             </Card>
           </div>
         </div>
