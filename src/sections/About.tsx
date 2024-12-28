@@ -5,6 +5,8 @@ import Image from "next/image";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 import { CardHeader } from "@/components/CardHeader";
+import { ToolboxItems } from "@/components/ToolboxItems";
+
 
 // Assets
 import bookImage from "@/assets/images/book-cover.png";
@@ -16,7 +18,9 @@ import ChromeIcon from "@/assets/icons/chrome.svg";
 import GithubIcon from "@/assets/icons/github.svg";
 import mapImage from "@/assets/images/london-map.jpg";
 import smileMejomji from "@/assets/images/memoji.png";
-import { ToolboxItems } from "@/components/ToolboxItems";
+import FigmaIcon from "@/assets/icons/figma-plain.svg";
+import PythonIcon from "@/assets/icons/python-plain.svg";
+import JavaIcon from "@/assets/icons/java.svg"; 
 
 const toolboxItems = [
   {
@@ -36,12 +40,16 @@ const toolboxItems = [
     iconType: ReactIcon,
   },
   {
-    title: "Chrome",
-    iconType: ChromeIcon,
-  },
-  {
     title: "Github",
     iconType: GithubIcon,
+  },
+  {
+    title: "Figma",
+    iconType: FigmaIcon,
+  },
+  {
+    title: "Java",
+    iconType: JavaIcon,
   },
 ];
 
@@ -118,11 +126,13 @@ export const AboutSection = () => {
                 description="Explore the technologies and tools I use to craft exceptional digital experiences."
               />
               <div>
-                <ToolboxItems items={toolboxItems} />
+              
+                <ToolboxItems items={toolboxItems} itemsWrapperClassName="animate-move-right [animation-duration:15s]" />
+               
                 <ToolboxItems
                   items={toolboxItems}
                   className="mt-6"
-                  itemsWrapperClassName=" -translate-x-1/2"
+                  itemsWrapperClassName="-translate-x-1/2 animate-move-left [animation-duration:15s]"
                 />
               </div>
             </Card>

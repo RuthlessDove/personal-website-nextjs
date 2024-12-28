@@ -8,6 +8,13 @@ export const TechIcon = ({ component }: { component: React.ElementType }) => {
           <stop offset="0%" stopColor="rgb(233 213 255)" />
           <stop offset="100%" stopColor="rgb(96, 165, 250)" />
         </linearGradient>
+        <style>
+          {`
+            .fill-[url(#tech-icon-gradient)] * {
+              fill: url(#tech-icon-gradient) !important;
+            }
+          `}
+        </style>
       </svg>
     </>
   );
