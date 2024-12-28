@@ -81,7 +81,9 @@ export const HeroSection = () => {
           </div>
 
           <div className="bg-gray-950 border border-gray-800 py-1.5 px-4 inline-flex items-center gap-4 rounded-lg">
-            <div className="bg-green-500 size-2.5 rounded-full"></div>
+            <div className="bg-green-500 size-2.5 rounded-full relative ">
+              <div className="bg-green-500 rounded-full absolute inset-0 animate-ping"></div>
+            </div>
             <div className="text-small font-medium">
               Available for new projects
             </div>
