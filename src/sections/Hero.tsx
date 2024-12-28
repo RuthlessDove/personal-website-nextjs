@@ -13,7 +13,7 @@ import { HeroOrbit } from "@/components/HeroOrbit";
 
 export const HeroSection = () => {
   return (
-    <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
+    <div className="py-32 md:py-48 lg:pb-60 relative z-0 overflow-x-clip">
       <div
         className="absolute inset-0"
         style={{
@@ -71,7 +71,7 @@ export const HeroSection = () => {
         </HeroOrbit>
       </div>
       <div className="container">
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center lg:-mt-20">
           <div className="-mb-2">
             <Image
               src={memojiImage}
