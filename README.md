@@ -94,7 +94,7 @@ You can deploy this project using platforms like Vercel, Netlify, or any other s
 ## Contributing
 Feel free to fork this repository, make changes, and submit a pull request.
 
-## Licenseand Attribution
+## License and Attribution
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 Feel free to reach out if you have any questions or suggestions!
 
