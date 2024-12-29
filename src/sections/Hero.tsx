@@ -104,10 +104,14 @@ export const HeroSection = () => {
         </div>
 
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4 z-0">
+        <a
+          className="z-10"
+          href="#projects"
+        >
           <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
             <span className="font-semibold">Explore My Work</span>
             <ArrowDown className="size-4 animate-bounce" />
-          </button>
+          </button></a>
           <a
             className="z-10"
             href="https://www.linkedin.com/in/grace-royle-uwumagbe"
