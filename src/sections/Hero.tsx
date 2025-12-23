@@ -13,7 +13,7 @@ import { HeroOrbit } from "@/components/HeroOrbit";
 
 export const HeroSection = () => {
   return (
-    <div className="py-32 md:py-48 lg:pb-60 relative z-0 overflow-x-clip">
+    <div className="py-32 md:py-48 lg:pb-60 relative z-0 overflow-x-clip" id="home">
       <div
         className="absolute inset-0"
         style={{
