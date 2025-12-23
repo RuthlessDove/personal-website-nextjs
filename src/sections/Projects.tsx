@@ -7,6 +7,8 @@ import moneyMentorImg from "@/assets/images/money-mentor-bg.png";
 import bubbleAppImg from "@/assets/images/bubbles-app.png";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRight from "@/assets/icons/arrow-up-right.svg";
+import cliqlyUI from "@/assets/images/cliqly-mockup.png";
+
 //Icons
 import FigmaIcon from "@/assets/icons/figma.svg";
 import ApiIcon from "@/assets/icons/api.svg";
@@ -16,6 +18,13 @@ import FlaskIcon from "@/assets/icons/flask.svg";
 import SQLlite from "@/assets/icons/sqlite.svg";
 import PythonIcon from "@/assets/icons/python.svg";
 import JavascriptIcon from "@/assets/icons/javascript-yellow.svg";
+import TailwindIcon from "@/assets/icons/tailwind-svgrepo-com.svg"
+import NextJSIcon from "@/assets/icons/next-js-svgrepo-com.svg"
+import SupabaseIcon from "@/assets/icons/supabase-icon.svg";
+import ResendIcon from "@/assets/icons/resend-icon-white.svg";
+import StripeIcon from "@/assets/icons/stripe-icon.svg";
+import VercelIcon from "@/assets/icons/vercel-icon.svg";
+import HfIcon from "@/assets/icons/hf-logo.svg";
 
 // Components
 import { SectionHeader } from "@/components/SectionHeader";
@@ -24,6 +33,19 @@ import { ProjectTechIcons } from "@/components/ProjectTechIcons";
 
 const portfolioProjects = [
   {
+    company: "Startup Founder",
+    year: "2025",
+    title: "Cliqly",
+    results: [
+      { title: "Developed & launched a personal CRM app" },
+      { title: "Utilised LLMs, Prompt Engineering, and AI to enhance functionality & improve the UX" },
+      { title: "Developed UI and scalable backend" },
+    ],
+    link: "#",
+    image: cliqlyUI,
+    text: "",
+    icon: [NextJSIcon,TailwindIcon, SupabaseIcon, ResendIcon, StripeIcon, HfIcon, ApiIcon, VercelIcon],
+  },{
     company: "WCIT Hackathon",
     year: "2023",
     title: "Communify App",
